@@ -32,7 +32,6 @@ public class Info_Activity extends AppCompatActivity
 {
     private ScrollView sv_main;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
