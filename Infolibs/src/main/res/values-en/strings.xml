@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="terms_condition">Terms &amp; Condition</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="str_info">Info</string>
+    <string name="title_app_name">Application Name:</string>
+    <string name="title_app_version">Application Version:</string>
+    <string name="title_os_version">OS Version:</string>
+    <string name="title_device_model">Device Model:</string>
+
+    <string name="follow_us_on_twitter">Follow us on Twitter</string>
+    <string name="follow_us_on_instagram">Follow us on Instagram</string>
+    <string name="like_us_on_facebook">Like us on Facebook</string>
+    <string name="visit_our_website">Visit our Website</string>
+    <string name="title_about">About</string>
+    <string name="feedback_for">Feedback for </string>
+    <string name="version">Version</string>
+
+    <string name="share_app">Share Application</string>
+    <string name="share_app_sub">Android Application</string>
+    <string name="share_app_body_top">Hello, \n I like </string>
+    <string name="share_app_body_middle_appaspect">Application by AppAspect. \n Please download from following link</string>
+    <string name="share_app_body_middle_guruInfoMedia">Application by GuruInfoMedia. \n Please download from following link</string>
+    <string name="share_app_body_bottom">"\nThanks"</string>
+    <string name="str_new_send">Send</string>
+    <string name="str_new_Cancel">Cancel</string>
+    <string name="rate_this_app">Rate this Application</string>
+    <string name="str_send">Send</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="share_andoird">Android</string>
+    <string name="share_application">Application</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="str_moreapps">More Applications</string>
+
+    <string name="str_mail_dialog_title">Send email...</string>
+    <string name="str_mail_msg_title">Send Message...</string>
+
+</resources>
