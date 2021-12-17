@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.appaspect.info.screen.INL_Constant_Data;
+import com.appaspect.info.screen.Info_Activity;
 import com.appaspect.info.screen.Info_Fragment;
 
 
@@ -44,12 +46,12 @@ public class MainActivity extends AppCompatActivity {
             info_fragment.setArguments(bundle_info);
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container, info_fragment, str_tag).addToBackStack(str_addToBackStack).commit();
+            //fragmentTransaction.replace(R.id.container, info_fragment, str_tag).addToBackStack(str_addToBackStack).commit();
 
-//            bundle_info.putBoolean(INL_Constant_Data.Header_Show_Hide,true); // if fragment pass true otherwise false
-//            Intent intent = new Intent(MainActivity.this, Info_Activity_new.class);
-//            intent.putExtras(bundle_info);
-//            startActivity(intent);
+            bundle_info.putBoolean(INL_Constant_Data.Header_Show_Hide,true); // if fragment pass true otherwise false
+            Intent intent = new Intent(MainActivity.this, Info_Activity.class);
+            intent.putExtras(bundle_info);
+            startActivity(intent);
 
         } catch (Exception e)
         {
