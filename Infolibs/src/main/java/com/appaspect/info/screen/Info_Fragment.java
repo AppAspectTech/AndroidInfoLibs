@@ -51,7 +51,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		{
 			Bundle bundle= getArguments();
 
-			if(bundle!=null)
+			if(bundle!=null) //getting bundle data and set value
 			{
 				Theme = bundle.getString(INL_Constant_Data.Theme);
 				publisherName = bundle.getString(INL_Constant_Data.Publisher_Name);
@@ -150,7 +150,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		mActionBar.hide();
 	}
 
-	private void manageHeader(View view)
+	private void manageHeader(View view) // set Header value
 	{
 		if(!header_show)
 		{
@@ -169,7 +169,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		//findViewById(R.id.imgInfo).setVisibility(View.GONE);
 	}
 
-	private void init(View view)
+	private void init(View view) // initialization of widgets
 	{
 		sv_main=view.findViewById(R.id.sv_main);
 		ll_seprator=view.findViewById(R.id.ll_seprator);
@@ -200,7 +200,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		}
 	}
 
-	private void manageOnClick()
+	private void manageOnClick() //set ClickListener
 	{
 		ll_contact_us.setOnClickListener(this);
 		ll_share_app.setOnClickListener(this);

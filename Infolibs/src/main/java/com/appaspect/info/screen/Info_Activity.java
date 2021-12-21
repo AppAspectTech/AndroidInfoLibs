@@ -30,19 +30,17 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class Info_Activity extends AppCompatActivity
 {
-    private ScrollView sv_main;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_new);
-        statusBarhide();
+        statusBarhide(); // hide default status bar
 
         String str_tag = "Info_Fragment";
         String str_addToBackStack = "Info_Fragment";
         Bundle bundle_info = getIntent().getExtras();
-        if(bundle_info!=null)
+        if(bundle_info!=null) // getting bundle data and set in fragment
         {
             Info_Fragment info_fragment=new Info_Fragment();
             info_fragment.setArguments(bundle_info);
