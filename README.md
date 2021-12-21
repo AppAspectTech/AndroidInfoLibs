@@ -71,3 +71,12 @@ Example:
 ```
 ## Preview Info Screen
 <img src="screenshot1.png" alt="preview" width="300" height="533">
+
+## Used by
+
+If you use my library, please tell me at info@appaspect.com
+So I can add your app here!
+
+
+## License
+Do what you want with this library.
