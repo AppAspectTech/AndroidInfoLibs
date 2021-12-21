@@ -69,5 +69,5 @@ Example:
 
         }
 ```
-## Preview Theme LITE
+## Preview Info Screen
 <img src="screenshot1.png" alt="preview" width="300" height="533">
