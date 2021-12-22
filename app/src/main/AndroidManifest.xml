@@ -19,10 +19,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".screen.Info_Activity">
+        <activity android:name="com.appaspect.info.screen.Info_Activity">
         </activity>
 
-        <activity android:name=".screen.WebViewActivity">
+        <activity android:name="com.appaspect.info.screen.WebViewActivity">
         </activity>
     </application>
 

@@ -15,7 +15,8 @@ import com.appaspect.info.screen.Info_Fragment;
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -42,16 +43,17 @@ public class MainActivity extends AppCompatActivity {
             bundle_info.putString(INL_Constant_Data.Device_OS,""); // Device OS version
 
             bundle_info.putBoolean(INL_Constant_Data.Header_Show_Hide,false); // if fragment pass true otherwise false
-            Info_Fragment info_fragment=new Info_Fragment();
-            info_fragment.setArguments(bundle_info); // passing all application information in bundle
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//            Info_Fragment info_fragment=new Info_Fragment();
+//            info_fragment.setArguments(bundle_info); // passing all application information in bundle
+//            FragmentManager fragmentManager = getSupportFragmentManager();
+//            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             //fragmentTransaction.replace(R.id.container, info_fragment, str_tag).addToBackStack(str_addToBackStack).commit();
 
             bundle_info.putBoolean(INL_Constant_Data.Header_Show_Hide,true); // if fragment pass true otherwise false
             Intent intent = new Intent(MainActivity.this, Info_Activity.class);
             intent.putExtras(bundle_info);
             startActivity(intent);
+            finish();
 
         } catch (Exception e)
         {

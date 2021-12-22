@@ -51,6 +51,12 @@ public class Info_Activity extends AppCompatActivity
 
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
+    }
+
     public void statusBarhide()
     {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
