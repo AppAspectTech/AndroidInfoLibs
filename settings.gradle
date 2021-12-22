@@ -1,11 +1,12 @@
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    //repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "AndroidInfoLibs"
+
 include ':app'
 include ':Infolibs'
+rootProject.name = 'AndroidInfoLibs'
