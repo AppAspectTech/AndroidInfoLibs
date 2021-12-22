@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
 }
-
 android {
     compileSdk 31
 
@@ -9,8 +8,8 @@ android {
         applicationId "com.appaspect.info"
         minSdk 21
         targetSdk 31
-        versionCode 8
-        versionName "1.8"
+        versionCode 10
+        versionName "2.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
