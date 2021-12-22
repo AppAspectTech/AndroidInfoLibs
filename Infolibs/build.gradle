@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.library'
-
+    id 'maven-publish'
 }
+
 group='com.github.AppAspectTech'
 android {
     compileSdk 31
@@ -9,6 +10,8 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 31
+        versionCode 13
+        versionName "2.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
