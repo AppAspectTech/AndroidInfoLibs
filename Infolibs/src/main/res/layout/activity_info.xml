@@ -544,7 +544,7 @@
                             android:layout_width="@dimen/info_icon_size"
                             android:layout_height="@dimen/info_icon_size"
                             android:padding="@dimen/space_05"
-                            android:src="@mipmap/ic_launcher"
+                            android:src="@mipmap/icon_web"
                             android:visibility="gone"/>
 
                         <androidx.appcompat.widget.AppCompatTextView
