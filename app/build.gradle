@@ -1,7 +1,7 @@
-plugins {
-    id 'com.android.application'
-}
-
+//plugins {
+//    id 'com.android.application'
+//}
+apply plugin: 'com.android.application'
 android {
     compileSdk 31
 
@@ -9,8 +9,8 @@ android {
         applicationId "com.appaspect.info"
         minSdk 21
         targetSdk 31
-        versionCode 16
-        versionName "2.6"
+        versionCode 17
+        versionName "2.7"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
