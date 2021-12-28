@@ -5,6 +5,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -69,10 +70,18 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 
 	private void manageHeader()
 	{
-		((TextView)findViewById(R.id.txt_header_title)).setText(getIntent().getStringExtra(ARGUMENT_TITLE));
+		FrameLayout frame_layout = findViewById(R.id.frame_layout);
+		frame_layout.setBackgroundColor(INL_Constant_Data.colorCode);
+
+		TextView txt_header_title =findViewById(R.id.txt_header_title);
+
+		txt_header_title.setText(getIntent().getStringExtra(ARGUMENT_TITLE));
 		ImageView imgBack = findViewById(R.id.img_back_arrow);
 		imgBack.setVisibility(View.VISIBLE);
 		imgBack.setOnClickListener(this);
+
+		txt_header_title.setTextColor(INL_Constant_Data.colorCode_Text);
+		imgBack.setColorFilter(INL_Constant_Data.colorCode_Text);
 
 		//findViewById(R.id.imgInfo).setVisibility(View.GONE);
 	}
