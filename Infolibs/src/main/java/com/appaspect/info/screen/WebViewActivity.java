@@ -23,7 +23,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.webview_acticity);
-		getSupportActionBar().hide();
+
 		manageHeader();
 		try
 		{

@@ -10,7 +10,7 @@
     <string name="appaspect_twitter_url" translatable="false">https://twitter.com/AppAspect</string>
     <string name="appaspect_website" translatable="false">https://www.appaspect.com</string>
     <string name="appaspect_info_mail" translatable="false">info@appaspecttechnologies.com</string>
-    <string name="appaspect_more_apps" translatable="false">https://play.google.com/store/apps/dev?id=5158157402406404947</string>
+    <string name="appaspect_more_apps" translatable="false">https://play.google.com/store/apps/developer?id=AppAspect+Technologies+Pvt.+Ltd.</string>
 
     <!--GuruInfoMedia-->
     <string name="guruinfomedia_instagram_url" translatable="false">https://www.instagram.com/appaspect/</string>
