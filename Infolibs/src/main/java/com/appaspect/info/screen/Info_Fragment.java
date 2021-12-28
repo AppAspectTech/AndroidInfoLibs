@@ -19,6 +19,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -152,11 +153,18 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 			((LinearLayout)view.findViewById(R.id.ll_main)).setVisibility(View.VISIBLE);
 		}
 
-		((TextView)view.findViewById(R.id.txt_header_title)).setText(getString(R.string.title_about));
+		FrameLayout frame_layout = view.findViewById(R.id.frame_layout);
+		frame_layout.setBackgroundColor(INL_Constant_Data.colorCode);
+
+		TextView txt_header_title = view.findViewById(R.id.txt_header_title);
+		txt_header_title.setText(getString(R.string.title_about));
+
+
 		ImageView imgBack = view.findViewById(R.id.img_back_arrow);
 		imgBack.setVisibility(View.VISIBLE);
 		imgBack.setOnClickListener(this);
-
+		txt_header_title.setTextColor(INL_Constant_Data.colorCode_Text);
+		imgBack.setColorFilter(INL_Constant_Data.colorCode_Text);
 		//findViewById(R.id.imgInfo).setVisibility(View.GONE);
 	}
 

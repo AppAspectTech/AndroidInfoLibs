@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 31
-        versionCode 5
-        versionName "4.1"
+        versionCode 21
+        versionName "5.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -54,7 +54,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.appaspect'
                 artifactId = 'info'
-                version = '4.9'
+                version = '5.1'
             }
         }
     }
