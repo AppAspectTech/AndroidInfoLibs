@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Selection;
@@ -41,6 +42,24 @@ public class Info_Activity extends AppCompatActivity
         Bundle bundle_info = getIntent().getExtras();
         if(bundle_info!=null) // getting bundle data and set in fragment
         {
+            try
+            {
+                INL_Constant_Data.colorCode = bundle_info.getInt(INL_Constant_Data.Header_BG_Color);
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                {
+                    getWindow().setStatusBarColor(INL_Constant_Data.colorCode);
+                } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                {
+                    getWindow().setStatusBarColor(INL_Constant_Data.colorCode);
+                }
+            }
+            catch (Exception e)
+            {
+               Log.e("Exception",e.toString());
+            }
+
+
             Info_Fragment info_fragment=new Info_Fragment();
             info_fragment.setArguments(bundle_info);
             FragmentManager fragmentManager = getSupportFragmentManager();
