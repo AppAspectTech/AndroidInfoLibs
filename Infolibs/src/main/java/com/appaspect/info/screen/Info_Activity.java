@@ -35,7 +35,6 @@ public class Info_Activity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_new);
-        statusBarhide(); // hide default status bar
 
         String str_tag = "Info_Fragment";
         String str_addToBackStack = "Info_Fragment";
@@ -57,9 +56,4 @@ public class Info_Activity extends AppCompatActivity
         finishAffinity();
     }
 
-    public void statusBarhide()
-    {
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
-    }
 }

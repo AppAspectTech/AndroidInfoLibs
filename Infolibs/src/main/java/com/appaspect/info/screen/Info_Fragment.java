@@ -33,7 +33,6 @@ import androidx.fragment.app.Fragment;
 
 public class Info_Fragment extends Fragment implements View.OnClickListener{
 
-	public ActionBar mActionBar;
 	private ScrollView sv_main;
 	private LinearLayout ll_seprator,ll_contact_us,ll_share_app,ll_rate_this_app,ll_more_app;
 	private LinearLayout ll_visit_our_website,ll_like_us_on_facebook,ll_follow_us_on_instagram,ll_follow_us_on_twitter;
@@ -135,19 +134,11 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 	}
 
 
-
-	public ActionBar getActionBar()
-	{
-		return ((AppCompatActivity) getActivity()).getSupportActionBar();
-	}
-
 	@Override
 	public void onResume()
 	{
 		super.onResume();
-		mActionBar = getActionBar();
-		mActionBar.setTitle(getString(R.string.title_about));
-		mActionBar.hide();
+
 	}
 
 	private void manageHeader(View view) // set Header value
