@@ -54,7 +54,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.appaspect'
                 artifactId = 'info'
-                version = '5.6'
+                version = '5.7'
             }
         }
     }
