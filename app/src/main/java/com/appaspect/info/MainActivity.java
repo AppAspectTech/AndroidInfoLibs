@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
             Bundle bundle_info=new Bundle();
             bundle_info.putString(INL_Constant_Data. Publisher_Name, INL_Constant_Data.AppAspect); // publisher name (AppAspect or GuruInfoMedia)
             bundle_info.putInt(INL_Constant_Data.InfoScreen_BG_Color,getResources().getColor(R.color.grey_bg));//Info screen Background color
-            bundle_info.putInt(INL_Constant_Data.Header_BG_Color,getResources().getColor(R.color.white)); // Header layout background color
+            bundle_info.putInt(INL_Constant_Data.Header_BG_Color,getResources().getColor(R.color.black)); // Header layout background color
             bundle_info.putInt(INL_Constant_Data.Header_Text_Color,getResources().getColor(R.color.white)); // set Header Text Color
             bundle_info.putInt(INL_Constant_Data.Privacy_Policy_Text_Color,getResources().getColor(R.color.white)); // set privacy policy Text Color
             bundle_info.putString(INL_Constant_Data.Theme,INL_Constant_Data.Theme_Dark); // Info screen theme (White or dark)
             bundle_info.putString(INL_Constant_Data.Privacy_URL,""); // Privacy url
             bundle_info.putString(INL_Constant_Data.Terms_And_Condition_URL,""); // Terms and Condition url
-            bundle_info.putString(INL_Constant_Data.App_Name,""); // Application Name
+            bundle_info.putString(INL_Constant_Data.App_Name,getString(R.string.app_name)); // Application Name
             bundle_info.putString(INL_Constant_Data.App_Package_Name,getPackageName()); // Application Package name
             bundle_info.putString(INL_Constant_Data.App_Version_Name,"2.0"); // Application Version name
 

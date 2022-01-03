@@ -406,6 +406,9 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 
 	public void onshareapps()
 	{
+		String body = getString(R.string.share_app_body_top) + " " + INL_Constant_Data.str_app_name + " \n" +
+				INL_Constant_Data.Str_Share_App_Body_middle + " \n" + APP_LINK + " \n" +
+				getString(R.string.share_app_body_bottom);
 
 		LayoutInflater li = LayoutInflater.from(getActivity());
 		View promptsView = li.inflate(R.layout.d_i_s_c_edit, null);
@@ -425,9 +428,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		alertDialogBuilder.setView(promptsView);
 
 		final EditText edtText = (EditText) promptsView.findViewById(R.id.edtName);
-		String body = getString(R.string.share_app_body_top) + " " + INL_Constant_Data.str_app_name + " \n " +
-				INL_Constant_Data.Str_Share_App_Body_middle + " \n " + APP_LINK + " \n " +
-				getString(R.string.share_app_body_bottom);
+
 		edtText.setText(body);
 		int position = edtText.length();
 		Editable etext = edtText.getText();
