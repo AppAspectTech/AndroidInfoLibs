@@ -413,7 +413,6 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		LayoutInflater li = LayoutInflater.from(getActivity());
 		View promptsView = li.inflate(R.layout.d_i_s_c_edit, null);
 
-
 		ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(Color.BLACK);
 		SpannableStringBuilder ssBuilder = new SpannableStringBuilder(INL_Constant_Data.str_app_name);
 		ssBuilder.setSpan(
@@ -423,16 +422,17 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 				Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
 		);
 
-		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
-		alertDialogBuilder.setTitle(ssBuilder);
-		alertDialogBuilder.setView(promptsView);
-
 		final EditText edtText = (EditText) promptsView.findViewById(R.id.edtName);
 
 		edtText.setText(body);
 		int position = edtText.length();
 		Editable etext = edtText.getText();
 		Selection.setSelection(etext, position);
+
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
+		alertDialogBuilder.setTitle(ssBuilder);
+		alertDialogBuilder.setView(promptsView);
+
 		alertDialogBuilder
 				.setCancelable(false)
 				.setPositiveButton(getString(R.string.str_send),
@@ -470,6 +470,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 				alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.RED);
 			}
 		});
+
 		alertDialog.show();
 	}
 }
