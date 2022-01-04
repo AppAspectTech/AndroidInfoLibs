@@ -271,10 +271,6 @@
 
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/info_layout_divider_height"
-                        android:background="@color/grey_bg" />
 
                 </LinearLayout>
 
