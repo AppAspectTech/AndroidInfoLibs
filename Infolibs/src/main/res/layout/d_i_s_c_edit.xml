@@ -12,12 +12,10 @@
         <EditText
             android:id="@+id/edtName"
             android:layout_width="fill_parent"
-            android:layout_height="200dip"
+            android:layout_height="200dp"
             android:layout_margin="10dp"
             android:inputType="textMultiLine"
-            android:minLines="7" >
-<!-- android:textColor="@android:color/black"  -->
-        <requestFocus />
+            android:singleLine="false">
         </EditText>
 
 <!--         <Button -->
