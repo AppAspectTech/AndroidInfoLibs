@@ -24,6 +24,8 @@ public class INL_Constant_Data {
     public  static  String str_visit_our_website ="";
     public  static  String str_share_app="";
     public  static  String App_Name="App_Name";
+    public  static  String APP_LINK="APP_LINK";
+
     public  static  String App_Package_Name="App_Package_Name";
     public  static  String App_Version_Name="App_Version_Name";
     public static String str_modelName ="";
@@ -31,6 +33,7 @@ public class INL_Constant_Data {
     public  static  String str_more_apps="";
     public  static  String str_contact_us_email="";
     public  static  String str_app_name="";
+    public  static  String str_app_link="";
     public  static  String str_app_version="";
     public  static  String str_follow_us_on_twitter="";
     public  static  String str_follow_us_on_instagram="";

@@ -39,7 +39,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 	private ScrollView sv_main;
 	private LinearLayout ll_seprator,ll_contact_us,ll_share_app,ll_rate_this_app,ll_more_app;
 	private LinearLayout ll_visit_our_website,ll_like_us_on_facebook,ll_follow_us_on_instagram,ll_follow_us_on_twitter;
-	private String APP_LINK,strPackageName="";
+	private String strPackageName="";
 	private TextView txt_app_version,txt_privacy,txt_terms_condition;
 	private String publisherName = "",Theme="",str_privacy_url="",str_terms_and_condition_url="";
 	private boolean header_show;
@@ -68,8 +68,8 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 				INL_Constant_Data.str_modelName = bundle.getString(INL_Constant_Data.Device_Model);
 				INL_Constant_Data.str_device_os = bundle.getString(INL_Constant_Data.Device_OS);
 				INL_Constant_Data.str_app_name = bundle.getString(INL_Constant_Data.App_Name);
-				INL_Constant_Data.str_app_version = bundle.getString(INL_Constant_Data.App_Version_Name);
 
+				INL_Constant_Data.str_app_version = bundle.getString(INL_Constant_Data.App_Version_Name);
 
 				if(Theme.equals(INL_Constant_Data.Theme_Dark))
 				{
@@ -82,14 +82,22 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 
 				getInfoDetails();
 
-				APP_LINK="https://play.google.com/store/apps/details?id=" + strPackageName;
-
+				INL_Constant_Data.str_app_link = bundle.getString(INL_Constant_Data.APP_LINK);
 			}
+
+
+
 		}
 		catch (Exception e)
 		{
 			Log.e("str_hl:- ",e.getMessage());
 		}
+
+		if(TextUtils.isEmpty(INL_Constant_Data.str_app_link))
+		{
+			INL_Constant_Data.str_app_link="https://play.google.com/store/apps/details?id=" + strPackageName;
+		}
+
 
 	}
 	private void getInfoDetails()
@@ -422,8 +430,8 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 				Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
 		);
 
-		String body = getString(R.string.share_app_body_top) + " " + INL_Constant_Data.str_app_name + "\n" +
-				INL_Constant_Data.Str_Share_App_Body_middle + "\n" + APP_LINK + "\n" +
+		String body = getString(R.string.share_app_body_top) + " " + INL_Constant_Data.str_app_name +
+				INL_Constant_Data.Str_Share_App_Body_middle + "\n" + INL_Constant_Data.str_app_link + "\n" +
 				getString(R.string.share_app_body_bottom);
 
 		AppCompatEditText edtText = (AppCompatEditText) promptsView.findViewById(R.id.edtName);

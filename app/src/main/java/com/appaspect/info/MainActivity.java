@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             bundle_info.putString(INL_Constant_Data.App_Name,getString(R.string.app_name)); // Application Name
             bundle_info.putString(INL_Constant_Data.App_Package_Name,getPackageName()); // Application Package name
             bundle_info.putString(INL_Constant_Data.App_Version_Name,"2.0"); // Application Version name
+            bundle_info.putString(INL_Constant_Data.APP_LINK,""); // Application Short Link
 
             bundle_info.putString(INL_Constant_Data.Device_Model,""); // Device Model Name
             bundle_info.putString(INL_Constant_Data.Device_OS,""); // Device OS version

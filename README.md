@@ -48,7 +48,7 @@ Example:
         bundle_info.putString(INL_Constant_Data.App_Name,""); // Application Name
         bundle_info.putString(INL_Constant_Data.App_Package_Name,getPackageName()); // Application Package name
         bundle_info.putString(INL_Constant_Data.App_Version_Name,""); // Application Version name
-
+        bundle_info.putString(INL_Constant_Data.APP_LINK,""); // Application Short Link
         bundle_info.putString(INL_Constant_Data.Device_Model,""); // Device Model Name
         bundle_info.putString(INL_Constant_Data.Device_OS,""); // Device OS version
 
