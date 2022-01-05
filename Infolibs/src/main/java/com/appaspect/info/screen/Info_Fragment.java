@@ -424,7 +424,6 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		);
 
 		final EditText edtText = (EditText) promptsView.findViewById(R.id.edtName);
-		edtText.setRawInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);
 
 		edtText.setText(body);
 		int position = edtText.length();
