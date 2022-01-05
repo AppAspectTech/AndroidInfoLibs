@@ -29,6 +29,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatEditText;
 import androidx.fragment.app.Fragment;
 
 
@@ -405,11 +406,9 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 
 	}
 
-	public void onshareapps()
+	private void onshareapps()
 	{
-		String body = getString(R.string.share_app_body_top) + " " + INL_Constant_Data.str_app_name + "\n" +
-				INL_Constant_Data.Str_Share_App_Body_middle + "\n" + APP_LINK + "\n" +
-				getString(R.string.share_app_body_bottom);
+
 
 		LayoutInflater li = LayoutInflater.from(getActivity());
 		View promptsView = li.inflate(R.layout.d_i_s_c_edit, null);
@@ -423,12 +422,18 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 				Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
 		);
 
-		final EditText edtText = (EditText) promptsView.findViewById(R.id.edtName);
+		String body = getString(R.string.share_app_body_top) + " " + INL_Constant_Data.str_app_name + "\n" +
+				INL_Constant_Data.Str_Share_App_Body_middle + "\n" + APP_LINK + "\n" +
+				getString(R.string.share_app_body_bottom);
 
+		AppCompatEditText edtText = (AppCompatEditText) promptsView.findViewById(R.id.edtName);
+		edtText.setSingleLine(false);
 		edtText.setText(body);
 		int position = edtText.length();
-		Editable etext = edtText.getText();
-		Selection.setSelection(etext, position);
+		edtText.setSelection(position);
+
+		//Editable etext = edtText.getText();
+		//Selection.setSelection(etext, position);
 
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
 		alertDialogBuilder.setTitle(ssBuilder);
