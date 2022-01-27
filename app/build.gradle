@@ -9,8 +9,8 @@ android {
         applicationId "com.appaspect.info"
         minSdk 21
         targetSdk 31
-        versionCode 42
-        versionName "6.8"
+        versionCode 76
+        versionName "7.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

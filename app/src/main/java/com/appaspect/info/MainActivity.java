@@ -1,6 +1,7 @@
 package com.appaspect.info;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             bundle_info.putInt(INL_Constant_Data.Header_BG_Color,getResources().getColor(R.color.black)); // Header layout background color
             bundle_info.putInt(INL_Constant_Data.Header_Text_Color,getResources().getColor(R.color.white)); // set Header Text Color
             bundle_info.putInt(INL_Constant_Data.Privacy_Policy_Text_Color,getResources().getColor(R.color.white)); // set privacy policy Text Color
-            bundle_info.putString(INL_Constant_Data.Theme,INL_Constant_Data.Theme_Dark); // Info screen theme (White or dark)
+            bundle_info.putString(INL_Constant_Data.Theme,INL_Constant_Data.Theme_White); // Info screen theme (White or dark)
             bundle_info.putString(INL_Constant_Data.Privacy_URL,""); // Privacy url
             bundle_info.putString(INL_Constant_Data.Terms_And_Condition_URL,""); // Terms and Condition url
             bundle_info.putString(INL_Constant_Data.App_Name,getString(R.string.app_name)); // Application Name

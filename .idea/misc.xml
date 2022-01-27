@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="Infolibs/src/main/res/drawable/background_white.xml" value="0.325" />
         <entry key="Infolibs/src/main/res/layout/activity_info.xml" value="0.5" />
         <entry key="Infolibs/src/main/res/layout/activity_info_new.xml" value="0.1766304347826087" />
         <entry key="Infolibs/src/main/res/layout/d_i_s_c_edit.xml" value="0.17299898682877407" />
