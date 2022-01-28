@@ -30,6 +30,10 @@ android {
         abortOnError false
     }
 
+    buildFeatures {
+        dataBinding true
+    }
+
 }
 
 dependencies {

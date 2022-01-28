@@ -36,11 +36,11 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 		{
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
 			{
-				getWindow().setStatusBarColor(INL_Constant_Data.colorCode);
+				getWindow().setStatusBarColor(INL_Constant_Data.colorCode_Header);
 			}
 			else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
 			{
-				getWindow().setStatusBarColor(INL_Constant_Data.colorCode);
+				getWindow().setStatusBarColor(INL_Constant_Data.colorCode_Header);
 			}
 		}
 		catch (Exception e)
@@ -53,7 +53,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 		{
 			webView = findViewById(R.id.webview);
 			progressBar=findViewById(R.id.progressBar);
-			progressBar.setIndeterminateTintList(ColorStateList.valueOf(INL_Constant_Data.colorCode));
+			progressBar.setIndeterminateTintList(ColorStateList.valueOf(INL_Constant_Data.colorCode_Header));
 
 			WebSettings webSettings = webView.getSettings();
 			webSettings.setJavaScriptEnabled(true);
@@ -137,7 +137,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 	private void manageHeader()
 	{
 		FrameLayout frame_layout = findViewById(R.id.frame_layout);
-		frame_layout.setBackgroundColor(INL_Constant_Data.colorCode);
+		frame_layout.setBackgroundColor(INL_Constant_Data.colorCode_Header);
 
 		TextView txt_header_title =findViewById(R.id.txt_header_title);
 
@@ -146,8 +146,8 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 		imgBack.setVisibility(View.VISIBLE);
 		imgBack.setOnClickListener(this);
 
-		txt_header_title.setTextColor(INL_Constant_Data.colorCode_Text);
-		imgBack.setColorFilter(INL_Constant_Data.colorCode_Text);
+		txt_header_title.setTextColor(INL_Constant_Data.colorCode_header_Text);
+		imgBack.setColorFilter(INL_Constant_Data.colorCode_header_Text);
 
 		//findViewById(R.id.imgInfo).setVisibility(View.GONE);
 	}

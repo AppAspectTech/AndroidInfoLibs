@@ -1,31 +1,10 @@
 package com.appaspect.info.screen;
 
-import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.Selection;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
-import android.text.TextUtils;
-import android.text.style.ForegroundColorSpan;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -46,14 +25,14 @@ public class Info_Activity extends AppCompatActivity
         {
             try
             {
-                INL_Constant_Data.colorCode = bundle_info.getInt(INL_Constant_Data.Header_BG_Color);
+                INL_Constant_Data.colorCode_Header = bundle_info.getInt(INL_Constant_Data.Header_BG_Color);
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
                 {
-                    getWindow().setStatusBarColor(INL_Constant_Data.colorCode);
+                    getWindow().setStatusBarColor(INL_Constant_Data.colorCode_Header);
                 } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
                 {
-                    getWindow().setStatusBarColor(INL_Constant_Data.colorCode);
+                    getWindow().setStatusBarColor(INL_Constant_Data.colorCode_Header);
                 }
             }
             catch (Exception e)

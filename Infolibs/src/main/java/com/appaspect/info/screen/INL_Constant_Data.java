@@ -5,12 +5,20 @@ public class INL_Constant_Data {
     public  static  String Theme ="Theme";
     public  static  String Theme_Dark ="Dark";
     public  static  String Theme_White ="White";
+    public  static  String Publisher_Name="Publisher_Name";
+
     public  static  String InfoScreen_BG_Color="InfoScreen_BG_Color";
     public  static  String Header_BG_Color="Header_BG_Color";
     public  static  String Header_Show_Hide="Header_Show_Hide";
     public  static  String Header_Text_Color="Header_Text_Color";
+    public  static  String Text_Color="Text_Color";
     public  static  String Privacy_Policy_Text_Color="Privacy_Policy_Text_Color";
-    public  static  String Publisher_Name="Publisher_Name";
+
+    public static int BG_ColorCode_Info_Screen;
+    public static int colorCode_Header;
+    public static int colorCode_header_Text;
+    public static int colorCode_Text;
+    public static int colorCode_Privacy_Policy;
 
     public  static  String Device_Model="Device_Model";
 
@@ -50,11 +58,7 @@ public class INL_Constant_Data {
     public  static  String str_app_name_and_version_name_colorCode_Text="";
     public  static  String str_privacy_policy_colorCode_Text="";
 
-    public static int BG_ColorCode_Info_Screen;
-    public static int colorCode ;
-    public static int colorCode_Text;
-    public static int colorCode_Text_Dark_Theme;
-    public static int colorCode_Privacy_Policy;
+
 
 
 }

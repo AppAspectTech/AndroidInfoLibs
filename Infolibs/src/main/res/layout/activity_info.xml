@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_bg"
     android:orientation="vertical">
     <include layout="@layout/header_layout" />
+
     <ScrollView
         android:id="@+id/sv_main"
         android:layout_width="match_parent"
@@ -16,6 +16,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/ll_main"
             android:layout_width="match_parent"
             android:layout_height="0dip"
             android:layout_weight="1"
@@ -48,6 +49,7 @@
 
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_info"
                     app:cardBackgroundColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -75,7 +77,8 @@
                                 android:orientation="horizontal"
                                 android:padding="@dimen/space_05">
 
-                                <ImageView
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/icon_contact_us"
                                     android:layout_width="@dimen/info_icon_size"
                                     android:layout_height="@dimen/info_icon_size"
                                     android:padding="@dimen/space_10"
@@ -100,6 +103,7 @@
                                         android:textSize="@dimen/info_text_size_14" />
 
                                     <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/arrow_contact_us"
                                         android:layout_width="@dimen/info_arrow_size"
                                         android:layout_height="@dimen/info_arrow_size"
                                         android:padding="@dimen/space_05"
@@ -131,7 +135,8 @@
                                 android:orientation="horizontal"
                                 android:padding="@dimen/space_05">
 
-                                <ImageView
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/icon_share_app"
                                     android:layout_width="@dimen/info_icon_size"
                                     android:layout_height="@dimen/info_icon_size"
                                     android:padding="@dimen/space_10"
@@ -155,6 +160,7 @@
                                         android:textSize="@dimen/info_text_size_14" />
 
                                     <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/arrow_share_app"
                                         android:layout_width="@dimen/info_arrow_size"
                                         android:layout_height="@dimen/info_arrow_size"
                                         android:padding="@dimen/space_05"
@@ -187,7 +193,8 @@
                                 android:orientation="horizontal"
                                 android:padding="@dimen/space_05">
 
-                                <ImageView
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/icon_rate_this_app"
                                     android:layout_width="@dimen/info_icon_size"
                                     android:layout_height="@dimen/info_icon_size"
                                     android:padding="@dimen/space_10"
@@ -202,7 +209,6 @@
                                     android:orientation="horizontal">
 
                                     <androidx.appcompat.widget.AppCompatTextView
-
                                         android:id="@+id/txt_rate_this_app"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -212,6 +218,7 @@
                                         android:textSize="@dimen/info_text_size_14" />
 
                                     <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/arrow_rate_this_app"
                                         android:layout_width="@dimen/info_arrow_size"
                                         android:layout_height="@dimen/info_arrow_size"
                                         android:padding="@dimen/space_05"
@@ -244,7 +251,8 @@
                                 android:orientation="horizontal"
                                 android:padding="@dimen/space_05">
 
-                                <ImageView
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/icon_more_app"
                                     android:layout_width="@dimen/info_icon_size"
                                     android:layout_height="@dimen/info_icon_size"
                                     android:padding="@dimen/space_10"
@@ -259,7 +267,7 @@
                                     android:orientation="horizontal">
 
                                     <androidx.appcompat.widget.AppCompatTextView
-                                        android:id="@+id/txt_moreapps"
+                                        android:id="@+id/txt_more_app"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -268,6 +276,7 @@
                                         android:textSize="@dimen/info_text_size_14" />
 
                                     <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/arrow_more_app"
                                         android:layout_width="@dimen/info_arrow_size"
                                         android:layout_height="@dimen/info_arrow_size"
                                         android:padding="@dimen/space_05"
@@ -285,6 +294,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_social"
                     app:cardBackgroundColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -318,6 +328,7 @@
                             android:padding="@dimen/space_05">
 
                             <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/icon_follow_us_on_twitter"
                                 android:layout_width="@dimen/info_icon_size"
                                 android:layout_height="@dimen/info_icon_size"
                                 android:padding="@dimen/space_10"
@@ -341,6 +352,7 @@
                                     android:textSize="@dimen/info_text_size_14" />
 
                                 <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/arrow_follow_us_on_twitter"
                                     android:layout_width="@dimen/info_arrow_size"
                                     android:layout_height="@dimen/info_arrow_size"
                                     android:padding="@dimen/space_05"
@@ -373,7 +385,8 @@
                             android:orientation="horizontal"
                             android:padding="@dimen/space_05">
 
-                            <ImageView
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/icon_follow_us_on_instagram"
                                 android:layout_width="@dimen/info_icon_size"
                                 android:layout_height="@dimen/info_icon_size"
                                 android:padding="@dimen/space_10"
@@ -389,6 +402,7 @@
                                 android:orientation="horizontal">
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txt_follow_us_on_instagram"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -397,6 +411,7 @@
                                     android:textSize="@dimen/info_text_size_14" />
 
                                 <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/arrow_follow_us_on_instagram"
                                     android:layout_width="@dimen/info_arrow_size"
                                     android:layout_height="@dimen/info_arrow_size"
                                     android:padding="@dimen/space_05"
@@ -428,7 +443,8 @@
                             android:orientation="horizontal"
                             android:padding="@dimen/space_05">
 
-                            <ImageView
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/icon_like_us_on_facebook"
                                 android:layout_width="@dimen/info_icon_size"
                                 android:layout_height="@dimen/info_icon_size"
                                 android:padding="@dimen/space_10"
@@ -453,6 +469,7 @@
                                     android:textSize="@dimen/info_text_size_14" />
 
                                 <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/arrow_like_us_on_facebook"
                                     android:layout_width="@dimen/info_arrow_size"
                                     android:layout_height="@dimen/info_arrow_size"
                                     android:padding="@dimen/space_05"
@@ -484,7 +501,8 @@
                             android:orientation="horizontal"
                             android:padding="@dimen/space_05">
 
-                            <ImageView
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/icon_visit_our_website"
                                 android:layout_width="@dimen/info_icon_size"
                                 android:layout_height="@dimen/info_icon_size"
                                 android:padding="@dimen/space_10"
@@ -500,6 +518,7 @@
                                 android:orientation="horizontal">
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txt_visit_our_website"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -508,6 +527,7 @@
                                     android:textSize="@dimen/info_text_size_14" />
 
                                 <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/arrow_visit_our_website"
                                     android:layout_width="@dimen/info_arrow_size"
                                     android:layout_height="@dimen/info_arrow_size"
                                     android:padding="@dimen/space_05"
@@ -554,7 +574,7 @@
                         android:layout_gravity="center"
                         android:gravity="center">
 
-                        <ImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="@dimen/info_icon_size"
                             android:layout_height="@dimen/info_icon_size"
                             android:padding="@dimen/space_05"
@@ -562,6 +582,7 @@
                             android:visibility="gone"/>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_app_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/info_text_color"

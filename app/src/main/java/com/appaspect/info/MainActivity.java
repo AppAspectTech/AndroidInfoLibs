@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.appaspect.info.screen.INL_Constant_Data;
 import com.appaspect.info.screen.Info_Activity;
@@ -15,6 +16,7 @@ import com.appaspect.info.screen.Info_Fragment;
 
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
             Bundle bundle_info=new Bundle();
             bundle_info.putString(INL_Constant_Data. Publisher_Name, INL_Constant_Data.AppAspect); // publisher name (AppAspect or GuruInfoMedia)
             bundle_info.putInt(INL_Constant_Data.InfoScreen_BG_Color,getResources().getColor(R.color.grey_bg));//Info screen Background color
-            bundle_info.putInt(INL_Constant_Data.Header_BG_Color,getResources().getColor(R.color.black)); // Header layout background color
+            bundle_info.putInt(INL_Constant_Data.Header_BG_Color,getResources().getColor(R.color.purple_200)); // Header layout background color
             bundle_info.putInt(INL_Constant_Data.Header_Text_Color,getResources().getColor(R.color.white)); // set Header Text Color
-            bundle_info.putInt(INL_Constant_Data.Privacy_Policy_Text_Color,getResources().getColor(R.color.white)); // set privacy policy Text Color
+            bundle_info.putInt(INL_Constant_Data.Text_Color,getResources().getColor(R.color.black)); // set Text Color
+            bundle_info.putInt(INL_Constant_Data.Privacy_Policy_Text_Color,getResources().getColor(R.color.purple_200)); // set privacy policy Text Color
             bundle_info.putString(INL_Constant_Data.Theme,INL_Constant_Data.Theme_White); // Info screen theme (White or dark)
             bundle_info.putString(INL_Constant_Data.Privacy_URL,""); // Privacy url
             bundle_info.putString(INL_Constant_Data.Terms_And_Condition_URL,""); // Terms and Condition url
