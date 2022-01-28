@@ -468,6 +468,7 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 				getString(R.string.share_app_body_bottom);
 
 		AppCompatEditText edtText = (AppCompatEditText) promptsView.findViewById(R.id.edtName);
+
 		edtText.setSingleLine(false);
 		edtText.setText(body);
 		int position = edtText.length();
@@ -513,8 +514,11 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 		alertDialog.setOnShowListener( new DialogInterface.OnShowListener() {
 			@Override
 			public void onShow(DialogInterface arg0) {
-				alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(Color.RED);
-				alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.RED);
+			//	alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(Color.RED);
+				//alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.RED);
+
+				alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(INL_Constant_Data.colorCode_Header);
+				alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(INL_Constant_Data.colorCode_Header);
 			}
 		});
 

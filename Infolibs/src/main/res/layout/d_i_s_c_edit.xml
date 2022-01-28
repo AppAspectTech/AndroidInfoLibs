@@ -18,6 +18,7 @@
             android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColorHint="@color/gray_dark"
             android:textColor="@color/black">
             <requestFocus />
         </androidx.appcompat.widget.AppCompatEditText>
