@@ -468,7 +468,8 @@ public class Info_Fragment extends Fragment implements View.OnClickListener{
 				getString(R.string.share_app_body_bottom);
 
 		AppCompatEditText edtText = (AppCompatEditText) promptsView.findViewById(R.id.edtName);
-
+		edtText.setHintTextColor(getResources().getColor(R.color.gray_dark));
+		edtText.setTextColor(getResources().getColor(R.color.black));
 		edtText.setSingleLine(false);
 		edtText.setText(body);
 		int position = edtText.length();
